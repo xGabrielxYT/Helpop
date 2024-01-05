@@ -1,0 +1,41 @@
+helpop:
+  title: true # Czy ma wysylac do administracji na title
+  actionbar: true # Czy ma wysylac do administracji na actionbar
+  chat: true # Czy ma wysylac do administracji na czat
+  webhook: false # Czy ma wysyłac na webhooka?
+  webhookLink: "" # Link do webhooka
+  cooldown: 15 # Cooldown uzywania /helpop
+  playerSendMessage: true # Czy wysyła wiadomość o wysłaniu wiadomosci do administracji
+  permission: "hikemc.helpop" # Permisja do odczytywania helpopa
+  playerSend: "&aPomyslnie wysłano wiadomość do administracji o tresci &2({wiadomosc})" # Użyj {wiadomosc} - aby pokazać wysłaną wiadomośc
+  permissionForBypass: "hikemc.helpop.bypass" # Jaka permisja do anulacji cooldownu
+  permissionBlockHelpop: "hikemc.helpop.block" # Permisja do blokady helpopa
+  clickTeleport: "&8[Teleport]" # Napis do teleportacji
+  clickCommand: true # Czy ma być klikalna wiadomość
+  clickHoverTp: "&7Kliknij aby przeteleportować do &a{nick}" # Uzyj {nick} do nicku zgłaszającego
+  clickCommandTP: "/tp {nick}" # Komenda wykonana po kliknięciu (z "/" wpisuj)
+
+
+messagesHelpop:
+  actionbar: "&8» &7Gracz &a{nick} &7napisał na helpopie: &a{wiadomosc}"   # Użyj {wiadomosc} - aby pokazać wysłaną wiadomośc, oraz {nick} - aby zdobyć nick osoby która uzyła helpopa
+  chat: "&c[HelpOP] &c{nick} napisał: &f{wiadomosc}"   # Użyj {wiadomosc} - aby pokazać wysłaną wiadomośc, oraz {nick} - aby zdobyć nick osoby która uzyła helpopa
+  title: "&c&lHELPOP"   # Użyj {wiadomosc} - aby pokazać wysłaną wiadomośc, oraz {nick} - aby zdobyć nick osoby która uzyła helpopa
+  subTitle: "&c{nick}&f: {wiadomosc}"   # Użyj {wiadomosc} - aby pokazać wysłaną wiadomośc, oraz {nick} - aby zdobyć nick osoby która uzyła helpopa
+  poprawneUzycie: "&cPopranwe użycie: /helpop (wiadomość)"
+  titleTime: 20 # Wpisz w tickach | 20 ticków = 1 sek
+  playerBlocked: "&cZostałes zablokowany do używania helpopa!"
+  cooldownLeft: "&cMusisz poczekać jeszcze &4{czas}&c przed użyciem tej komendy!" # Użyj {czas} aby zdobyć pozostały czas do użycia helpopa
+  noPermissionBlock: "&cBrak uprawnień"
+  unblocked: "&aOdblokowano gracza &2{nick} &az blokady helpop" # Uzyj {nick} - aby zdobyć nick gracza
+  blocked: "&cZablokowano gracza &4{nick} &cz blokady helpop" # Uzyj {nick} - aby zdobyć nick gracza
+  blockOffline: "&cPodany gracz jest offline!" # Uzyj {nick} - aby zdobyć nick gracza
+  blockUzycie: "&7Poprawne użycie: &f/blokadahelpop (nick)"
+
+
+# Komendy:
+# /helpop (wiadomość)
+# /helpop alerts - Wyłacza wszystkie alerty
+# /helpop title - Wyłacza alerty z title
+# /helpop chat - wyłącza alerty z czatu
+# /helpop bar - wyłacza alerty z actionbar
+# /blokadahelpop (nick) - blokuje dostep do helopopa

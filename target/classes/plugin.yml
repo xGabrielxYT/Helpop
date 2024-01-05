@@ -1,0 +1,8 @@
+name: HelpopCore
+version: '1.0'
+main: pl.xgabriel.helpopcore.Main
+api-version: '1.16'
+commands:
+  helpop:
+  helpopreload:
+  blokadahelpop:
